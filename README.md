@@ -13,15 +13,18 @@ A docker image with serveral machine learning tools installed. Based on tensorfl
 
 ## Setup
 * Install Docker
-* Optional - Create Folder to Share with Docker Container
+* Create Folder (ex: my-project) to Share with Docker Container
 * Download Latest Docker Image
 	`docker pull chchannn/ml-starter`
-* Start Docker Container
-	`docker run -i -t -p 8888:8888 chchannn/ml-starter`
+* Start Docker Container With Shared Notebook Folder
+	* `docker run -i -t -p 8888:8888 -v /your my-project path/notebooks/:/notebooks/projects chchannn/ml-starter`
+	On Windows it looks like `docker run -i -t -p 8888:8888 -v /c/my-project/notebooks/:/notebooks/projects chchannn/ml-starter`
+	On macOS it looks like `docker run -i -t -p 8888:8888 -v ~/my-project/notebooks/:/notebooks/projects chchannn/ml-starter`
+	Please change your folder path accordingly 
 * Visit  `https://Docker IP Address:8888` to Login and use Jupyter Server
+	try `localhost:8888` if you don't know your Docker IP Address
 * Default Jupyter Password is **ml-starter**
-* Optional - Start Docker Container With Shared Notebook Folder
-	* `docker run -i -t -p 8888:8888 -v /c/notebooks/:/notebooks/projects chchannn/ml-starter`
+
 * Optional - Change default memory
 	* `docker-machine stop`
 	* `VBoxManage modifyvm default --cpus 2`
