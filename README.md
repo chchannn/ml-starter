@@ -12,11 +12,12 @@ A docker image with serveral machine learning tools installed. Based on tensorfl
 * PYMSQL
 
 ## Setup
-1. Install Docker: `https://www.docker.com/`
+1. Install [Docker](http://www.docker.com)
 2. Create Folder (ex: my-project) to Share with Docker Container
 3. Download Latest Docker Image
 	
 	`docker pull chchannn/ml-starter`
+	
 4. Start Docker Container With Shared Notebook Folder, please change your folder path accordingly:
 
 	`docker run -i -t -p 8888:8888 -v /your/my-project/path/:/notebooks/ chchannn/ml-starter`
