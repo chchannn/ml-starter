@@ -35,7 +35,6 @@ RUN pip --no-cache-dir install \
         pandas \
         pymysql \
         Pillow \
-        MySQLdb \
         currencyconverter\
         && \
     python -m ipykernel.kernelspec
