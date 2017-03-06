@@ -36,6 +36,7 @@ RUN pip --no-cache-dir install \
         pymysql \
         Pillow \
         currencyconverter\
+        seaborn\
         && \
     python -m ipykernel.kernelspec
 
