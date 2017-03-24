@@ -10,6 +10,10 @@ A docker image with serveral machine learning tools installed. Based on tensorfl
 * Numpy
 * PIP
 * PYMSQL
+* psycopg2
+* urllib
+* BeautifulSoup4
+* currencyconverter
 
 ## Setup
 1. Install [Docker](http://www.docker.com)
