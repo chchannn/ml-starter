@@ -38,6 +38,7 @@ RUN pip --no-cache-dir install \
         currencyconverter \
         seaborn \
         psycopg2 \
+        beautifulsoup4 \
         && \
     python -m ipykernel.kernelspec
 
