@@ -37,7 +37,6 @@ RUN pip --no-cache-dir install \
         Pillow \
         currencyconverter \
         seaborn \
-        urllib \
         psycopg2 \
         && \
     python -m ipykernel.kernelspec
