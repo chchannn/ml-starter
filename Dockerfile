@@ -37,7 +37,6 @@ RUN pip --no-cache-dir install \
         Pillow \
         currencyconverter \
         seaborn \
-        beautifulsoup4 \
         urllib \
         psycopg2 \
         && \
