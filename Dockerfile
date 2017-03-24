@@ -35,11 +35,11 @@ RUN pip --no-cache-dir install \
         pandas \
         pymysql \
         Pillow \
-        currencyconverter\
-        seaborn\
-        beautifulsoup4\
-        urllib\
-        psycopg2\
+        currencyconverter \
+        seaborn \
+        beautifulsoup4 \
+        urllib \
+        psycopg2 \
         && \
     python -m ipykernel.kernelspec
 
