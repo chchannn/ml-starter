@@ -39,6 +39,7 @@ RUN pip --no-cache-dir install \
         seaborn \
         psycopg2 \
         beautifulsoup4 \
+        urllib3 \
         && \
     python -m ipykernel.kernelspec
 
