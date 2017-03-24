@@ -40,6 +40,7 @@ RUN pip --no-cache-dir install \
         psycopg2 \
         beautifulsoup4 \
         urllib3 \
+        sqlalchemy \
         && \
     python -m ipykernel.kernelspec
 
